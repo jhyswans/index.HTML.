@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Web - Cultura Digital</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #5a004f;
+    }
+
+    header, nav, section {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #ffe0f0;
+      text-align: center;
+      border-bottom: 3px solid #ffb6c1;
+    }
+
+    nav {
+      background-color: #ffb6c1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 2px dashed #d86fa1;
+    }
+
+    nav button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      margin: 10px;
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #ff1493;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+      background-color: #fff8fa;
+      border-top: 2px solid #ffb6c1;
+    }
+
+    .galeria {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .galeria img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 3px solid #ffb6c1;
+      box-shadow: 2px 2px 10px #ffc0cb;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 1px 1px 8px #ccc;
+      margin: 10px 0;
+    }
+
+    h1, h2 {
+      color: #d63384;
+    }
+
+    iframe, img {
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 8px #ccc;
+    }
+  </style>
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>COLEGIO DE BACHILLERES DEL ESTADO DE TLAXCALA<br/>PLANTEL 08 IXTACUIXTLA</h1>
+    <p><strong>Semestre:</strong> 2025-A<br/>
+    <strong>Materia:</strong> Cultura Digital<br/>
+    <strong>Grupo:</strong> 203<br/>
+    <strong>Docente:</strong> Mora Cuapio Eduardo</p>
+    <p><strong>Integrantes:</strong><br/>
+        - Sánchez Salazar Samantha<br/>
+        - Dávila Sánchez Viviana Karina<br/>
+        - Hernández Pimentel Camila Fernanda<br/>
+        - Cruz Astorga Maura Edith</p>
+    <div class="galeria">
+      <img alt="Integrante 1" src="Imagen de WhatsApp 2025-06-20 a las 17.15.32_0aa90cac.jpg"/>
+      <img alt="Integrante 2" src="Imagen de WhatsApp 2025-06-20 a las 17.23.39_7a7db44d.jpg"/>
+      <img alt="Integrante 3" src="Imagen de WhatsApp 2025-06-20 a las 21.31.35_5fc3366a.jpg"/>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('clima')">Clima</button>
+    <button onclick="mostrarSeccion('basura')">Basura Cero</button>
+    <button onclick="mostrarSeccion('moda')">Moda</button>
+    <button onclick="mostrarSeccion('tabaco')">Tabaco</button>
+    <button onclick="mostrarSeccion('alcohol')">Alcohol</button>
+    <button onclick="mostrarSeccion('drogas')">Drogadicción</button>
+    <button onclick="mostrarSeccion('alimentacion')">Alimentación</button>
+    <button onclick="mostrarSeccion('deportes')">Deportes</button>
+    <button onclick="mostrarSeccion('playlist')">Playlist</button>
+  </nav>
+
+  <section id="clima">
+    <h2>Clima en Tlaxcala Centro</h2>
+    <p>El clima en Tlaxcala Centro presenta lluvias frecuentes durante los próximos días, con temperaturas templadas. Ideal para llevar paraguas y ropa ligera pero impermeable.</p>
+
+    <ul style="list-style: none; padding: 0;">
+      <li>🌧️ <strong>Sábado 21 de junio:</strong> Lluvias ocasionales — 18°C / 14°C</li>
+      <li>🌧️ <strong>Domingo 22 de junio:</strong> Lluvias ocasionales — 18°C / 12°C</li>
+      <li>🌧️ <strong>Lunes 23 de junio:</strong> Lluvias continuas — 18°C / 12°C</li>
+      <li>🌧️ <strong>Martes 24 de junio:</strong> Lluvias continuas — 19°C / 12°C</li>
+      <li>🌦️ <strong>Miércoles 25 de junio:</strong> Algunas lluvias — 21°C / 12°C</li>
+      <li>🌧️ <strong>Jueves 26 de junio:</strong> Lluvias frecuentes — 22°C / 13°C</li>
+      <li>🌧️ <strong>Viernes 27 de junio:</strong> Lluvias intermitentes — 23°C / 13°C</li>
+    </ul>
+
+    <p style="font-size: 0.9em; color: #555;">Fuente: Weather.com | Actualizado al 21 de junio de 2025</p>
+  </section>
+
+  <section id="basura">
+    <h2>Basura Cero</h2>
+    <p>El movimiento <strong>Basura Cero</strong> (Zero Waste) es una filosofía ambiental que busca eliminar completamente la generación de residuos. Su objetivo es rediseñar los ciclos de vida de los productos para que todos los materiales puedan reutilizarse. En lugar de enviar basura a vertederos o incineradores, los recursos se reaprovechan continuamente.</p>
+
+    <h3>Principios del movimiento</h3>
+    <ul>
+      <li>🚫 Rechazar lo que no necesitamos.</li>
+      <li>🔁 Reducir el consumo innecesario.</li>
+      <li>♻️ Reutilizar y reparar en lugar de desechar.</li>
+      <li>🧴 Reciclar adecuadamente los residuos.</li>
+      <li>🌱 Compostar los residuos orgánicos.</li>
+    </ul>
+
+    <h3>¿Por qué es importante?</h3>
+    <p>La producción y el descarte de residuos tiene un gran impacto ambiental. A través de Basura Cero:</p>
+    <ul>
+      <li>Se reducen las emisiones de gases de efecto invernadero.</li>
+      <li>Se disminuye la contaminación del agua, suelo y aire.</li>
+      <li>Se conserva la biodiversidad al evitar plásticos en océanos.</li>
+      <li>Se fomenta una economía circular y responsable.</li>
+    </ul>
+
+    <h3>Acciones cotidianas</h3>
+    <p>Cualquier persona puede adoptar el enfoque Basura Cero desde casa:</p>
+    <ul>
+      <li>Usar bolsas reutilizables.</li>
+      <li>Comprar a granel y evitar productos con envolturas plásticas.</li>
+      <li>Reparar objetos en lugar de tirarlos.</li>
+      <li>Separar residuos correctamente en orgánicos, reciclables y no reciclables.</li>
+      <li>Utilizar botellas, vasos y utensilios reutilizables.</li>
+    </ul>
+
+    <h3>Ejemplos exitosos</h3>
+    <p>Ciudades como San Francisco (EE.UU.) o Kamikatsu (Japón) han implementado políticas de Basura Cero logrando tasas de reciclaje superiores al 80%.</p>
+
+    <img src="https://www.ecologiaverde.com/wp-content/uploads/2020/09/que-es-la-politica-de-basura-cero.jpg" width="300" alt="Política Basura Cero"/>
+    <img src="El reciclaje es un proceso que busca convertir….jpg" width="300" alt="Reciclaje"/>
+    <img src="2c66e092-6eec-45a6-bda0-0852a5301294.jpg" width="300" alt="Separación de basura"/>
+  </section>
+
+  <section id="moda">
+    <h2>Moda</h2>
+    <p>La moda es una forma de expresión personal y cultural que evoluciona con el tiempo. A través de ella, las personas comunican su identidad, estado de ánimo e incluso sus ideales. Diseñadores famosos y emergentes presentan sus colecciones en pasarelas internacionales, marcando tendencias e impulsando la innovación textil y el uso de materiales sostenibles.</p>
+
+    <p>En esta sección te presentamos el trabajo de tres reconocidas casas de moda:</p>
+
+    <img alt="Desfile de moda" src="https://static.wixstatic.com/media/5e40e5_ae0bb63b52b3465cbb49933bdcb93f6f~mv2.jpg" width="300"/>
+
+    <h3>Jimmy Choo</h3>
+    <p>Jimmy Choo es una marca británica de lujo conocida por sus zapatos elegantes y glamorosos. Fundada en 1996, ha vestido a celebridades y miembros de la realeza en alfombras rojas de todo el mundo. Sus diseños combinan artesanía tradicional con un enfoque moderno del estilo.</p>
+    <p><a href="https://www.tiktok.com/@sunnythx9qa/video/7498002113419545886" target="_blank">Ver video en TikTok</a></p>
+
+    <h3>Ziad Nakad</h3>
+    <p>Ziad Nakad es un diseñador libanés reconocido por sus vestidos de alta costura con detalles intrincados y bordados lujosos. Sus creaciones están inspiradas en el arte clásico, la feminidad y la sofisticación.</p>
+    <p><a href="https://www.tiktok.com/@sunnythx9qa/video/7498002113419545886" target="_blank">Ver video en TikTok</a></p>
+  </section>
+
+  <section id="tabaco">
+    <h2>Tabaco</h2>
+    <p><!-- Aquí puedes agregar el contenido de tabaco que desees --></p>
+  </section>
+
+  <section id="alcohol">
+    <h2>Alcohol</h2>
+    <p>El alcohol es una droga legal que se consume comúnmente en bebidas como cerveza, vino y licores. Aunque su consumo moderado está socialmente aceptado, el <strong>abuso de alcohol</strong> puede provocar graves consecuencias para la salud física, mental y social.</p>
+
+    <h3>¿Qué es el alcoholismo?</h3>
+    <p>El alcoholismo, o trastorno por consumo de alcohol, es una enfermedad crónica caracterizada por una necesidad compulsiva de beber, pérdida de control sobre la cantidad y síntomas de abstinencia cuando no se consume. Afecta el cuerpo, el cerebro, las emociones y las relaciones personales.</p>
+
+    <h3>Consecuencias físicas</h3>
+    <ul>
+      <li>🍺 Daño hepático (cirrosis, hepatitis alcohólica)</li>
+      <li>🧠 Trastornos neurológicos (pérdida de memoria, demencia)</li>
+      <li>❤️ Problemas cardiovasculares (hipertensión, infartos)</li>
+      <li>🩺 Trastornos digestivos, pancreatitis, gastritis</li>
+      <li>💉 Mayor riesgo de cáncer (boca, hígado, esófago)</li>
+    </ul>
+
+    <h3>Efectos mentales y sociales</h3>
+    <ul>
+      <li>😔 Depresión, ansiedad, agresividad</li>
+      <li>🚔 Problemas legales: accidentes, violencia, delitos</li>
+      <li>💸 Dificultades laborales y económicas</li>
+      <li>👨‍👩‍👧 Ruptura de relaciones familiares y amistades</li>
+    </ul>
+
+    <h3>Alcohol y juventud</h3>
+    <p>El consumo de alcohol entre adolescentes representa un riesgo grave. Afecta el desarrollo cerebral, incrementa conductas impulsivas y puede generar adicción a largo plazo. Muchos jóvenes comienzan por presión social, curiosidad o falta de información.</p>
+
+    <h3>Prevención y ayuda</h3>
+    <p>Prevenir el alcoholismo requiere educación temprana, límites familiares, campañas sociales y acceso a tratamientos. Existen grupos de apoyo como <strong>Alcohólicos Anónimos</strong>, terapias psicológicas y centros de rehabilitación.</p>
+
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/qmEOpwTfqP8" width="300"></iframe>
+    <img src="c3329480-b258-4145-9c47-52888d3fbe2a.jpg" width="300" alt="Daños del alcohol"/>
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/QmBfPVLqLgg" width="300"></iframe>
+
+    <p style="font-size: 0.9em; color: #555;">Fuente: OMS, INPRFM, Alcoholics Anonymous México</p>
+  </section>
+
+  <section id="drogas">
+    <h2>Drogadicción</h2>
+    <p>La drogadicción es una enfermedad crónica que se caracteriza por la necesidad compulsiva de consumir sustancias que afectan el sistema nervioso central. Estas sustancias alteran el comportamiento, las emociones, la percepción y el juicio, generando una fuerte dependencia física y psicológica.</p>
+
+    <h3>Tipos de drogas</h3>
+    <ul>
+      <li>💊 <strong>Estimulantes:</strong> como la cocaína, las anfetaminas y el éxtasis. Aumentan la actividad cerebral.</li>
+      <li>🧠 <strong>Depresoras:</strong> como el alcohol, benzodiacepinas o barbitúricos. Disminuyen la actividad cerebral.</li>
+      <li>🌿 <strong>Alucinógenas:</strong> como el LSD, hongos o peyote. Alteran la percepción de la realidad.</li>
+      <li>💉 <strong>Narcóticos:</strong> como la heroína, morfina o fentanilo. Tienen efectos analgésicos y altamente adictivos.</li>
+      <li>🚬 <strong>Drogas legales:</strong> como tabaco y alcohol. A pesar de su legalidad, son muy perjudiciales.</li>
+    </ul>
+
+    <h3>Consecuencias del consumo</h3>
+    <ul>
+      <li>🧠 Deterioro cognitivo y daño neurológico</li>
+      <li>💔 Trastornos afectivos: depresión, ansiedad, psicosis</li>
+      <li>🏥 Problemas físicos: fallas hepáticas, pulmonares y cardíacas</li>
+      <li>🚔 Problemas legales: violencia, accidentes, cárcel</li>
+      <li>👨‍👩‍👧‍👦 Deterioro de relaciones familiares y sociales</li>
+      <li>💸 Ruina económica y pérdida de objetivos de vida</li>
+    </ul>
+
+    <h3>Señales de alerta</h3>
+    <ul>
+      <li>⚠️ Cambios bruscos de humor o comportamiento</li>
+      <li>⚠️ Pérdida de interés en actividades y amigos</li>
+      <li>⚠️ Problemas en la escuela o el trabajo</li>
+      <li>⚠️ Mentiras frecuentes, irritabilidad, aislamiento</li>
+    </ul>
+
+    <h3>Prevención y tratamiento</h3>
+    <p>La prevención comienza con la educación y el diálogo en casa y en la escuela. Es importante fomentar la autoestima, enseñar habilidades sociales y brindar apoyo emocional. En caso de consumo, el tratamiento incluye desintoxicación, terapia psicológica, apoyo familiar y grupos como Narcóticos Anónimos.</p>
+
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/gNOF2X67Ffw" width="300"></iframe>
+    <img src="00a74b8f-54cf-4115-9cfc-3e926aef13c0.jpg" width="300" alt="Consecuencias de las drogas"/>
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/Ddd-bd_MZTY" width="300"></iframe>
+
+    <p style="font-size: 0.9em; color: #555;">Fuente: UNODC, Centros de Integración Juvenil, OMS</p>
+  </section>
+
+  <section id="alimentacion">
+    <h2>Alimentación</h2>
+    <p>Una alimentación equilibrada y saludable es fundamental para mantener el bienestar físico y mental. Implica consumir una variedad de alimentos ricos en nutrientes, evitando excesos de grasas saturadas, azúcares y sodio.</p>
+
+    <h3>Principios básicos</h3>
+    <ul>
+      <li>🥦 Frutas y verduras frescas, al menos 5 porciones al día.</li>
+      <li>🍞 Cereales integrales como base de la dieta.</li>
+      <li>🥩 Proteínas magras como pollo, pescado, legumbres.</li>
+      <li>💧 Hidratación adecuada, principalmente agua.</li>
+      <li>⚠️ Limitar consumo de alimentos procesados y bebidas azucaradas.</li>
+    </ul>
+
+    <h3>Beneficios</h3>
+    <ul>
+      <li>💪 Energía y mejor rendimiento físico y mental.</li>
+      <li>❤️ Prevención de enfermedades cardiovasculares, diabetes y obesidad.</li>
+      <li>🧠 Mejor función cognitiva y estado de ánimo positivo.</li>
+      <li>🦷 Salud bucal y fortalecimiento del sistema inmune.</li>
+    </ul>
+
+    <img src="Saludable.png" width="300" alt="Alimentación Saludable"/>
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/6ohB5qvTI3A" width="300"></iframe>
+
+    <p style="font-size: 0.9em; color: #555;">Fuente: OMS, FAO, Nutriólogos certificados</p>
+  </section>
+
+  <section id="deportes">
+    <h2>Deportes</h2>
+    <p>El deporte es una actividad física que promueve la salud, la disciplina y el trabajo en equipo. A través del ejercicio regular se mejora la condición cardiovascular, la fuerza muscular y la salud mental.</p>
+
+    <h3>Beneficios del deporte</h3>
+    <ul>
+      <li>🏃‍♂️ Mejor control de peso y prevención de obesidad.</li>
+      <li>🧠 Reducción del estrés y mejora del estado de ánimo.</li>
+      <li>💪 Fortalecimiento del sistema inmune y huesos.</li>
+      <li>🤝 Desarrollo de habilidades sociales y trabajo en equipo.</li>
+    </ul>
+
+    <img src="20230217_155230_edited.jpg" width="300" alt="Deportes"/>
+    <img src="cancha futbol.jpg" width="300" alt="Cancha de fútbol"/>
+    <img src="deporte.jpg" width="300" alt="Actividad deportiva"/>
+
+    <p style="font-size: 0.9em; color: #555;">Fuente: OMS, CDC, expertos en deporte</p>
+  </section>
+
+  <section id="playlist">
+    <h2>Playlist Favorita</h2>
+    <p>Disfruta de esta playlist especialmente seleccionada para motivarte y acompañarte en tus actividades diarias.</p>
+    <iframe allowfullscreen frameborder="0" height="200" src="https://www.youtube.com/embed/videoseries?list=PL5fjhPZgjcoW0vAtIpWfiH18yeAtWaRgf" width="300"></iframe>
+  </section>
+
+</body>
+</html>
